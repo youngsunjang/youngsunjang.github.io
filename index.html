@@ -23,6 +23,10 @@
          h1, h2, h3 {
             margin-left: 20px; /* Adjust this value as needed */
          }
+         h3.alumni::before {
+            content: "• "; /* Adds a dot before the content */
+            color: black;  /* You can change the color if needed */
+         }
       </style>
       <script type="text/javascript">
          var dojoConfig = {
@@ -57,6 +61,6 @@
       </h2>
       <hr>
       <h1> Alumni List </h1>
-      <h3> Benedic Kohler | Works at McKinsey & Company | email: <a href= "mailto: kohlerbok@gmail.com"> kohlerbok@gmail.com </a> | Class 2023 </h3>
+      <h3 class="alumni"> Benedic Kohler | Works at McKinsey & Company | email: <a href= "mailto: kohlerbok@gmail.com"> kohlerbok@gmail.com </a> | Class 2023 </h3>
    </body>
 </html>
