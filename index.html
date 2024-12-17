@@ -35,22 +35,62 @@
             font-weight: bold;
             display: block;
          }
+         .section-title {
+            margin-top: 40px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+         }
+         .academia, .alumni {
+            margin: 20px auto;
+            width: 80%;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+         }
+         .academia h3, .alumni h4 {
+            margin: 5px 0;
+         }
+         .alumni::before {
+            content: "• ";
+            color: black;
+            font-weight: bold;
+         }
       </style>
    </head>
    <body>
       <h1>Internship Opportunities</h1>
       <ul class="notice-board">
-         <!-- Universal Health Services -->
-         <li>
-            <a href="uhs.html" target="_blank">1. Universal Health Services, Inc. (UHS)</a>
-         </li>
          <!-- Susquehanna -->
          <li>
             <a href="susquehanna.html" target="_blank">2. Susquehanna Technology Discovery Day</a>
          </li>
+         <!-- Universal Health Services -->
+         <li>
+            <a href="uhs.html" target="_blank">1. Universal Health Services, Inc. (UHS)</a>
+         </li>
       </ul>
+
+      <!-- Academia Section -->
+      <div class="academia">
+         <h2 class="section-title">Academia - Graduate School (PhD)</h2>
+         <h3>1. Coming Soon</h3>
+         <p>
+            Explore a list of research universities in the United States: 
+            <a href="https://en.wikipedia.org/wiki/List_of_research_universities_in_the_United_States" target="_blank">Post Details</a>
+         </p>
+      </div>
+
+      <!-- Alumni Section -->
+      <div class="alumni">
+         <h2 class="section-title">Alumni List</h2>
+         <h4>Benedict Kohler | Works at McKinsey & Company | email: 
+            <a href="mailto:kohlerbok@gmail.com">kohlerbok@gmail.com</a> | Class 2023</h4>
+      </div>
    </body>
 </html>
+
 
 
 
