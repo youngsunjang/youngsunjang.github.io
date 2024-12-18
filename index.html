@@ -35,6 +35,15 @@
             font-weight: bold;
             display: block;
          }
+         .notice-board .expired a {
+            text-decoration: line-through; /* Strikethrough for expired items */
+            color: #888; /* Greyed-out text */
+         }
+         .update-date {
+            font-size: 0.9em;
+            color: #555;
+            margin-left: 10px;
+         }
          .section-title {
             margin-top: 40px;
             font-size: 1.5em;
@@ -67,8 +76,9 @@
             <a href="susquehanna.html" target="_blank">2. Susquehanna Technology Discovery Day</a>
          </li>
          <!-- Universal Health Services -->
-         <li>
+         <li class="expired">
             <a href="uhs.html" target="_blank">1. Universal Health Services, Inc. (UHS)</a>
+            <span class="update-date">[24/12/17]</span>
          </li>
       </ul>
 
