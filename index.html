@@ -46,16 +46,39 @@
         .professor-links {
             margin-top: 20px;
         }
-        .professor-links img {
+        .professor {
+            position: relative;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .professor img {
             width: 150px;
             height: auto;
-            margin: 0 10px;
             cursor: pointer;
             border: 2px solid #000;
             border-radius: 10px;
         }
-        .professor-links img:hover {
+        .professor img:hover {
             opacity: 0.8;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 150px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .professor:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
         }
     </style>
 </head>
@@ -68,17 +91,24 @@
         <div class="comment public-service" onclick="location.href='public-service.html';">Public Service</div>
     </div>
     
+    <h2>Professors in Muhlenberg CS Department (Click an image to move to the professor's website)</h2>
     <div class="professor-links">
-        <a href="https://hamedyaghoobian.com/" target="_blank">
-            <img src="images/professor1.png" alt="Dr. Hamed Yaghoobian's Website">
-        </a>
-        <a href="https://proyashpodder.github.io/" target="_blank">
-            <img src="images/professor2.png" alt="Dr. Proyash Podder's Website">
-        </a>
+        <div class="professor">
+            <a href="https://hamedyaghoobian.com/" target="_blank">
+                <img src="images/professor1.png" alt="Dr. Hamed Yaghoobian's Website">
+                <div class="tooltip">Dr. Hamed Yaghoobian</div>
+            </a>
+        </div>
+        <div class="professor">
+            <a href="https://proyashpodder.github.io/" target="_blank">
+                <img src="images/professor2.png" alt="Dr. Proyash Podder's Website">
+                <div class="tooltip">Dr. Proyash Podder</div>
+            </a>
+        </div>
     </div>
-    
 </body>
 </html>
+
 
 
 
